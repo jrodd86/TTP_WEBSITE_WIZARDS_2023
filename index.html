@@ -1,0 +1,98 @@
+<!--
+
+Website Wizards
+
+Imagine that you are a kids' birthday party magician. Like many things, you're now running your business online and so instead of capes, cups, and wands, you are using HTML, CSS, and JS. Luckily, kids are pretty easy to entertain; all you need to do is move things, pop up things, change colors, etc.
+
+Your task is to build a magician's website for little kids using HTML, CSS, and JS, specifically jQuery. Use buttons to call different effects on img and div tags. You can use the built in slideToggle() and fadeToggle() action in jQuery but use the animate() action at least 3 times with various CSS properties.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="script.js"></script>
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("images/magician_shop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #card {
+      width: 100px;
+      height: 150px;
+      background-color: red;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #casino{
+      width: 100px;
+      height: 150px;
+      background-color: blue;
+      text-align: center;  
+    }
+    
+    #stars{
+      width: 100px;
+      height: 150px;
+      background-color: yellowgreen;
+      text-align: center;
+    }
+
+     #wb_sunny{
+      width: 100px;
+      height: 150px;
+      background-color: rebeccapurple;
+      text-align: center;
+     }
+
+    p{
+      font-size: 150%;
+      color: red;
+    }
+    h1{
+      color: red;
+    }
+    
+    </style>
+</head>
+  
+<body>
+  <div id="card">
+    <button id="magicButton">Perform Magic Trick</button>
+    <i class="large material-icons">favorite</i>
+  </div>
+</br>
+  
+  <div id="casino">
+    <button id="magicButton2">Perform Magic Trick</button>
+    <i class="large material-icons">casino</i>
+  </div>  
+</br>
+  
+  <div id="stars">
+    <button id="magicButton3">Perform Magic Trick</button>
+    <i class="large material-icons">stars</i>
+  </div>  
+</br>
+  
+  <div id="wb_sunny">
+    <button id="magicButton4">Perform Magic Trick</button>
+    <i class="large material-icons">wb_sunny</i>
+  </div>  
+
+  <p id="p1">Shazam!!!</p>
+  <button>Perform Magic Trick</button>
+
+  <h1 onclick="this.innerHTML='Abracadabra'">Click Here for More Magic </h1>
+</body>
+</html>
